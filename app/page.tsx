@@ -14,6 +14,7 @@ import {
   Vote,
   CreditCard,
   Home,
+  Receipt,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -112,6 +113,54 @@ export default function HomePage() {
         </div>
 
         <MarketTicker />
+      </section>
+
+      {/* ───────────────────── RELATABILITY (StoryBrand: empathy beat before the analytical Problem block) ───────────────────── */}
+      <section className="container-page py-20 sm:py-24">
+        <div className="mx-auto max-w-3xl">
+          <div className="mb-8 text-center">
+            <Badge variant="bear" className="mb-4">
+              <Receipt className="h-3 w-3" />
+              The Math You&apos;ve Already Done
+            </Badge>
+            <h2 className="font-display text-4xl font-black tracking-tight sm:text-5xl">
+              You&apos;ve stood in that aisle.
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+              Big finance talks about &ldquo;trade-offs&rdquo; like it means
+              rebalancing a portfolio. We mean these.
+            </p>
+          </div>
+
+          <Card className="border-border/60 bg-card/60 backdrop-blur-sm">
+            <CardContent className="p-7 sm:p-10">
+              <ul className="divide-y divide-border/40">
+                {TRADEOFFS.map((t, i) => (
+                  <li
+                    key={i}
+                    className="grid grid-cols-[1fr_auto_1fr] items-center gap-3 py-3 font-mono text-sm sm:gap-5 sm:py-3.5 sm:text-base"
+                  >
+                    <span className="text-right text-foreground">{t.a}</span>
+                    <span className="rounded-full border border-amber-400/40 bg-amber-400/10 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-widest text-amber-400">
+                      or
+                    </span>
+                    <span className="text-left text-foreground">{t.b}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="mt-8 border-t border-border/40 pt-6 text-center">
+                <p className="font-display text-xl font-bold text-foreground sm:text-2xl">
+                  This is the bank account we built for.
+                </p>
+                <p className="mt-2 text-sm text-muted-foreground sm:text-base">
+                  Not a hypothetical one with $50k of &ldquo;play money.&rdquo;
+                  Yours.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
       </section>
 
       {/* ───────────────────── PROBLEM (StoryBrand: External / Internal / Philosophical) ───────────────────── */}
@@ -502,6 +551,14 @@ export default function HomePage() {
     </>
   );
 }
+
+const TRADEOFFS: Array<{ a: string; b: string }> = [
+  { a: "A gallon of milk", b: "A smoke-alarm battery" },
+  { a: "Refilling the prescription", b: "Paying the phone bill" },
+  { a: "Brake pads in October", b: "Christmas presents in December" },
+  { a: "Catching up on rent", b: "Fixing the back tooth" },
+  { a: "Daycare on Tuesday", b: "Keeping the Tuesday shift" },
+];
 
 function Stat({ label, value }: { label: string; value: string }) {
   return (
