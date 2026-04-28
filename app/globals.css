@@ -208,6 +208,16 @@
     background: oklch(0.82 0.16 85 / 0.4);
     color: oklch(0.16 0.025 250);
   }
+
+  /* Inline italics lean right; nudge a hair of trailing space so the
+     next word doesn't optically collide with serif/descender tails.
+     Targets inline italic elements only \u2014 not block-level
+     `.italic` paragraphs (which have no italic\u2192roman boundary). */
+  em,
+  i,
+  cite {
+    padding-inline-end: 0.12em;
+  }
 }
 
 @layer components {
