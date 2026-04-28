@@ -378,7 +378,7 @@ export default function HomePage() {
               </div>
 
               <h3 className="font-display text-3xl font-black tracking-tight sm:text-4xl">
-                Too Small to Fail.
+                Too Small to Care.
                 <sup className="ml-0.5 text-amber-400 text-base">*</sup>
               </h3>
               <p className="mt-3 font-display text-lg italic text-amber-400 sm:text-xl">
