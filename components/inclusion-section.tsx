@@ -119,26 +119,16 @@ export function InclusionSection() {
           ))}
         </div>
 
-        <div className="mx-auto mt-12 max-w-3xl rounded-2xl border border-amber-400/30 bg-amber-400/5 p-6 text-sm leading-relaxed text-muted-foreground sm:p-7">
-          <p className="font-semibold text-foreground">
-            Quick honest note about what those badges mean.
-          </p>
-          <p className="mt-2">
-            We can&apos;t directly accept SNAP, WIC, or Section 8 voucher funds
-            as deposits &mdash; federal regulations restrict those programs to
-            specific food and housing uses, and that&apos;s the law. What
-            those badges <em>do</em> mean: if you receive any of these
-            benefits, you&apos;re a fully welcomed user on our platform. Your
-            paycheck, side-gig income, tax refund, gift money, or settlement
-            money is what funds your account. The bot doesn&apos;t care where
-            the dollars came from. Neither do we.
-          </p>
-          <p className="mt-3">
-            Most fintech apps quietly filter out users on government assistance
-            with credit checks, minimum-balance rules, or KYC flows that
-            penalize PO-box addresses and rural ZIP codes. We don&apos;t do any
-            of that. Period.
-          </p>
+        <div className="mx-auto mt-12 max-w-3xl">
+          <div className="rounded-2xl border-2 border-amber-400/40 bg-card/60 p-8 text-center shadow-lg backdrop-blur-sm sm:p-10">
+            <p className="font-display text-3xl font-black leading-tight tracking-tight sm:text-4xl">
+              We don&apos;t check credit. We don&apos;t check income.{" "}
+              <span className="text-gradient-gold">Ever.</span>
+            </p>
+            <p className="mt-4 font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground sm:text-sm">
+              No minimum balance · No KYC theater · No PO-box rejection
+            </p>
+          </div>
         </div>
 
         <div className="mx-auto mt-10 grid max-w-4xl gap-3 sm:grid-cols-3">
