@@ -15,6 +15,8 @@ import {
   CreditCard,
   Home,
   Receipt,
+  Landmark,
+  ShieldAlert,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -332,6 +334,128 @@ export default function HomePage() {
               </CardContent>
             </Card>
           ))}
+        </div>
+      </section>
+
+      {/* ───────────────────── OBJECTION HANDLE: "What if I lose?" (satirical bailout bit + honest risk disclosure) ───────────────────── */}
+      <section className="container-page py-24">
+        <div className="mx-auto max-w-3xl">
+          <div className="mb-10 text-center">
+            <Badge variant="gold" className="mb-4">
+              <Landmark className="h-3 w-3" />
+              The Honest Question
+            </Badge>
+            <h2 className="font-display text-4xl font-black tracking-tight sm:text-5xl">
+              What if I <span className="italic text-bear">lose</span>?
+            </h2>
+            <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
+              Great news. Your losses are fully insured by the American
+              taxpayer.
+              <sup className="ml-0.5 text-amber-400">*</sup>
+            </p>
+          </div>
+
+          {/* Mock "official document" card */}
+          <Card className="relative overflow-hidden border-amber-400/40 bg-gradient-to-br from-flag-blue/10 via-card to-flag-red/10 shadow-xl">
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-0 stripes-bg opacity-20"
+            />
+            <CardContent className="relative p-8 text-center sm:p-12">
+              {/* Fake treasury seal */}
+              <div className="relative mx-auto mb-7 flex h-32 w-32 items-center justify-center rounded-full border-4 border-amber-400 bg-gradient-to-br from-flag-blue/30 to-flag-red/30 shadow-lg">
+                <div className="absolute inset-2 rounded-full border-2 border-dashed border-amber-400/50" />
+                <div className="font-display leading-none">
+                  <div className="text-[9px] font-bold uppercase tracking-widest text-amber-400">
+                    U.S. Treasury
+                  </div>
+                  <div className="mt-1 text-2xl font-black text-foreground">
+                    $1T
+                  </div>
+                  <div className="mt-1 text-[9px] font-bold uppercase tracking-widest text-amber-400">
+                    Bailout Energy
+                  </div>
+                </div>
+              </div>
+
+              <h3 className="font-display text-3xl font-black tracking-tight sm:text-4xl">
+                Too Small to Fail.
+                <sup className="ml-0.5 text-amber-400 text-base">*</sup>
+              </h3>
+              <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+                For seventeen years, Wall Street has enjoyed an implicit
+                federal backstop on losses they caused themselves. We figured
+                we&apos;d just extend the same courtesy to the rest of the
+                country.
+                <sup className="ml-0.5 text-amber-400">*</sup>
+              </p>
+
+              <div className="mx-auto mt-8 grid max-w-xl gap-3 sm:grid-cols-3">
+                {[
+                  "FDIC-Equivalent Energy",
+                  "Bailout-Adjacent",
+                  "Lehman Brothers Pricing",
+                ].map((b) => (
+                  <div
+                    key={b}
+                    className="rounded-lg border border-amber-400/30 bg-amber-400/5 px-3 py-2 text-[11px] font-bold uppercase tracking-wider text-amber-400"
+                  >
+                    {b}
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* The real, honest footnote */}
+          <div className="mt-6 rounded-2xl border border-bear/30 bg-bear/5 p-6 text-sm leading-relaxed text-muted-foreground sm:p-7">
+            <div className="flex items-start gap-3">
+              <ShieldAlert className="mt-0.5 h-5 w-5 shrink-0 text-bear" />
+              <div className="flex-1 space-y-3">
+                <p>
+                  <span className="font-bold text-bear">
+                    * Obviously satire.
+                  </span>{" "}
+                  We cannot and do not insure trading losses with taxpayer
+                  money, federal reserves, or any other public funds. That
+                  would be illegal, impossible, and a betrayal of every
+                  premise of this brand. We made the joke because the actual
+                  policy of socializing Wall Street losses while privatizing
+                  their gains is older than most of our users.
+                </p>
+                <p>
+                  What we <em>actually</em> do for risk management:
+                </p>
+                <ul className="ml-5 list-disc space-y-1.5">
+                  <li>
+                    Auto-pause every bot when the broad market drops &gt;5%
+                    intraday. You sleep through the worst of it.
+                  </li>
+                  <li>
+                    Zero margin, zero leverage on the free tier. You can
+                    never lose more than you deposit.
+                  </li>
+                  <li>
+                    SIPC protects against brokerage failure (up to $500k).
+                    SIPC does <em>not</em> protect against market losses.
+                  </li>
+                  <li>
+                    Diversified ETF-based strategies by default. Single-stock
+                    concentration is opt-in only.
+                  </li>
+                  <li>
+                    Withdraw 100% of your funds at any time, no fee, no
+                    questions, no &ldquo;please confirm your identity&rdquo;
+                    runaround.
+                  </li>
+                </ul>
+                <p>
+                  Investing involves real risk. You can lose money. We say it
+                  loudly because most products say it quietly.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
