@@ -53,6 +53,18 @@ const FAQS = [
     a: "We\u2019re working on it. The brokerage industry currently requires a SSN or ITIN to open an account due to federal regulations. If you have an ITIN you can sign up. We\u2019re actively partnering with community organizations to expand access.",
   },
   {
+    q: "I\u2019m on SNAP / EBT / Section 8 / WIC / SSI. Am I welcome here?",
+    a: "Yes. Loudly, explicitly, and as a matter of policy. We do not run credit checks. We do not require minimum balances. We don\u2019t reject PO-box addresses or rural ZIP codes. We can\u2019t legally accept SNAP/EBT/voucher dollars as deposits (federal program rules), but if you receive any of those benefits, your paycheck or side-gig money funds your account exactly the same as everyone else\u2019s. The bot doesn\u2019t care. Neither do we.",
+  },
+  {
+    q: "Can I use my EBT card to fund my account?",
+    a: "No \u2014 and we wish we could. SNAP/EBT funds are federally restricted to specific food categories at approved retailers. Routing them into a brokerage account would be illegal under federal program rules. What we can do: make sure the rest of your financial life works around your benefit-day schedule. Auto-deposits can be timed to your paycheck day, your benefit day, or any combination.",
+  },
+  {
+    q: "Do I need a bank account?",
+    a: "No. ObamaGains works with Cash App, Chime, Venmo, and most prepaid debit cards. About 5% of U.S. households are unbanked \u2014 we built deposits and withdrawals to handle every common alternative.",
+  },
+  {
     q: "Is this regulated?",
     a: "Brokerage operations run through a SIPC-member, FINRA-registered partner. ObamaGains itself is registered as an investment adviser. Full Form ADV will be linked from the footer once we launch. If anything in this paragraph is opaque, our FAQ is failing \u2014 ask us in plain English.",
   },

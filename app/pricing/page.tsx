@@ -139,6 +139,10 @@ export default function PricingPage() {
               "Charge based on \u201cassets under management\u201d",
               "Make you call a 1-800 to cancel",
               "Pretend a small fee is \u201cfree\u201d because of an asterisk",
+              "Run credit checks on people receiving SNAP, EBT, or Section 8",
+              "Require a minimum balance from anyone, ever",
+              "Penalize PO-box addresses or rural ZIP codes during KYC",
+              "Hide an ITIN-only signup path in a help-center footnote",
             ].map((item) => (
               <div key={item} className="flex items-start gap-3 text-muted-foreground">
                 <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-bull" />

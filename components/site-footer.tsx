@@ -22,6 +22,20 @@ export function SiteFooter() {
               Algorithmic trading built for the working class. We charge less
               because you have less. That&apos;s the whole pitch.
             </p>
+            <div className="mt-4 flex flex-wrap gap-1.5">
+              <span className="inline-flex items-center rounded-md border border-flag-blue/40 bg-flag-blue/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider">
+                EBT Accepted
+              </span>
+              <span className="inline-flex items-center rounded-md border border-flag-red/40 bg-flag-red/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider">
+                Section 8 Friendly
+              </span>
+              <span className="inline-flex items-center rounded-md border border-amber-400/40 bg-amber-400/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider">
+                ITIN OK
+              </span>
+              <span className="inline-flex items-center rounded-md border border-bull/40 bg-bull/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider">
+                Unbanked-OK
+              </span>
+            </div>
             <p className="mt-3 font-display text-lg italic text-muted-foreground/80">
               &ldquo;Yes, we can.&rdquo;
             </p>

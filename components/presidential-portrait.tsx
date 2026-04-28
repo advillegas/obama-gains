@@ -11,11 +11,12 @@ export function PresidentialPortrait({ className = "" }: PortraitProps) {
 
       <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl border-4 border-amber-400/30 bg-gradient-to-br from-flag-blue/20 via-background to-flag-red/20 shadow-2xl ring-1 ring-white/5">
         <Image
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/800px-President_Barack_Obama.jpg"
-          alt="Official portrait of the 44th President of the United States, Barack Obama (public domain, via Wikimedia Commons)"
+          src="/obama-portrait.jpg"
+          alt="Official 2012 White House portrait of Barack Obama by Pete Souza (public domain, U.S. Government work)"
           width={800}
           height={1000}
           priority
+          sizes="(min-width: 1024px) 28rem, (min-width: 640px) 24rem, 90vw"
           className="h-full w-full object-cover object-top"
         />
 

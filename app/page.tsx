@@ -12,6 +12,8 @@ import {
   XCircle,
   Star,
   Vote,
+  CreditCard,
+  Home,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -19,6 +21,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { MarketTicker } from "@/components/market-ticker";
 import { PresidentialPortrait } from "@/components/presidential-portrait";
 import { WaitlistForm } from "@/components/waitlist-form";
+import { InclusionSection } from "@/components/inclusion-section";
 
 export default function HomePage() {
   return (
@@ -78,6 +81,27 @@ export default function HomePage() {
                   <Clock className="h-4 w-4 text-bull" />
                   60-second setup
                 </div>
+              </div>
+
+              <div className="mt-5 flex flex-wrap items-center gap-2">
+                <span className="inline-flex items-center gap-1.5 rounded-full border border-flag-blue/40 bg-flag-blue/15 px-3 py-1 text-[11px] font-bold uppercase tracking-wider backdrop-blur-sm">
+                  <CreditCard className="h-3 w-3 text-flag-blue" />
+                  EBT Accepted
+                </span>
+                <span className="inline-flex items-center gap-1.5 rounded-full border border-flag-red/40 bg-flag-red/15 px-3 py-1 text-[11px] font-bold uppercase tracking-wider backdrop-blur-sm">
+                  <Home className="h-3 w-3 text-flag-red" />
+                  Section 8 Friendly
+                </span>
+                <span className="inline-flex items-center gap-1.5 rounded-full border border-amber-400/50 bg-amber-400/15 px-3 py-1 text-[11px] font-bold uppercase tracking-wider backdrop-blur-sm">
+                  <Sparkles className="h-3 w-3 text-amber-400" />
+                  ITIN OK · No SSN required
+                </span>
+                <a
+                  href="#inclusion"
+                  className="text-xs font-semibold text-amber-400 underline-offset-4 hover:underline"
+                >
+                  see all 12 →
+                </a>
               </div>
             </div>
 
@@ -261,6 +285,10 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      {/* ───────────────────── INCLUSION / DEI (Class-first inclusion) ───────────────────── */}
+      <div id="inclusion" className="scroll-mt-24" />
+      <InclusionSection />
 
       {/* ───────────────────── STAKES vs SUCCESS (StoryBrand: Failure / Vision) ───────────────────── */}
       <section className="container-page py-24">
