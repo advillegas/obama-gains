@@ -16,7 +16,6 @@ import {
   Home,
   Receipt,
   Landmark,
-  ShieldAlert,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -419,55 +418,6 @@ export default function HomePage() {
             </CardContent>
           </Card>
 
-          {/* The real, honest footnote */}
-          <div className="mt-6 rounded-2xl border border-bear/30 bg-bear/5 p-6 text-sm leading-relaxed text-muted-foreground sm:p-7">
-            <div className="flex items-start gap-3">
-              <ShieldAlert className="mt-0.5 h-5 w-5 shrink-0 text-bear" />
-              <div className="flex-1 space-y-3">
-                <p>
-                  <span className="font-bold text-bear">
-                    * Obviously satire.
-                  </span>{" "}
-                  We cannot and do not insure trading losses with taxpayer
-                  money, federal reserves, or any other public funds. That
-                  would be illegal, impossible, and a betrayal of every
-                  premise of this brand. We made the joke because the actual
-                  policy of socializing Wall Street losses while privatizing
-                  their gains is older than most of our users.
-                </p>
-                <p>
-                  What we <em>actually</em> do for risk management:
-                </p>
-                <ul className="ml-5 list-disc space-y-1.5">
-                  <li>
-                    Auto-pause every bot when the broad market drops &gt;5%
-                    intraday. You sleep through the worst of it.
-                  </li>
-                  <li>
-                    Zero margin, zero leverage on the free tier. You can
-                    never lose more than you deposit.
-                  </li>
-                  <li>
-                    SIPC protects against brokerage failure (up to $500k).
-                    SIPC does <em>not</em> protect against market losses.
-                  </li>
-                  <li>
-                    Diversified ETF-based strategies by default. Single-stock
-                    concentration is opt-in only.
-                  </li>
-                  <li>
-                    Withdraw 100% of your funds at any time, no fee, no
-                    questions, no &ldquo;please confirm your identity&rdquo;
-                    runaround.
-                  </li>
-                </ul>
-                <p>
-                  Investing involves real risk. You can lose money. We say it
-                  loudly because most products say it quietly.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
