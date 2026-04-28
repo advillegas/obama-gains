@@ -557,7 +557,7 @@ const TRADEOFFS: Array<{ a: string; b: string }> = [
   { a: "Refilling the prescription", b: "Paying the phone bill" },
   { a: "Brake pads in October", b: "Christmas presents in December" },
   { a: "Catching up on rent", b: "Paying child support" },
-  { a: "Paying off the parking tickets", b: "Keeping the lights on" },
+  { a: "Paying off parking tickets", b: "Keeping the lights on" },
 ];
 
 function Stat({ label, value }: { label: string; value: string }) {
