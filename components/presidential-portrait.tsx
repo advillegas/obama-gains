@@ -58,9 +58,23 @@ export function PresidentialPortrait({ className = "" }: PortraitProps) {
         </div>
       </div>
 
-      {/* Floating "Thanks Obama" sticker */}
-      <div className="absolute -right-3 -top-3 rotate-12 rounded-xl border-2 border-flag-red/60 bg-background px-3 py-1.5 font-display text-sm font-black text-flag-red shadow-xl sm:-right-4 sm:-top-4 sm:px-4 sm:py-2 sm:text-base">
-        Thanks, Obama.
+      {/* "Thanks, Obama." headline — campaign-poster caption */}
+      <div className="relative mt-6 text-center">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 -z-10 mx-auto h-full w-[min(420px,100%)] bg-gradient-to-r from-transparent via-amber-400/15 to-transparent blur-2xl"
+        />
+        <h2 className="font-display text-4xl font-black leading-[0.95] tracking-tight sm:text-5xl">
+          <span className="text-gradient-flag">Thanks,</span>{" "}
+          <span className="text-gradient-gold">Obama.</span>
+        </h2>
+        <p className="mx-auto mt-2 max-w-xs text-xs font-mono uppercase tracking-[0.18em] text-muted-foreground sm:text-[11px]">
+          The unofficial endorsement we&apos;re never going to get.
+        </p>
+        <div
+          aria-hidden
+          className="mx-auto mt-4 h-0.5 w-32 bg-gradient-to-r from-flag-red via-amber-400 to-flag-blue opacity-60"
+        />
       </div>
     </div>
   );
