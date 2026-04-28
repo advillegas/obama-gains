@@ -382,6 +382,10 @@ export default function HomePage() {
                 Too Small to Fail.
                 <sup className="ml-0.5 text-amber-400 text-base">*</sup>
               </h3>
+              <p className="mt-3 font-display text-lg italic text-amber-400 sm:text-xl">
+                Bailouts aren&apos;t just for corporations anymore.
+                <sup className="ml-0.5">*</sup>
+              </p>
               <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
                 For seventeen years, Wall Street has enjoyed an implicit
                 federal backstop on losses they caused themselves. We figured
@@ -389,6 +393,14 @@ export default function HomePage() {
                 country.
                 <sup className="ml-0.5 text-amber-400">*</sup>
               </p>
+
+              {/* Big rotated stamp */}
+              <div className="relative mx-auto mt-8 inline-block">
+                <div className="rotate-[-6deg] rounded-md border-[3px] border-bear/70 bg-bear/10 px-5 py-2 font-display text-2xl font-black uppercase tracking-wider text-bear shadow-md sm:text-3xl">
+                  Literally Risk-Free
+                  <sup className="ml-0.5 text-base">*</sup>
+                </div>
+              </div>
 
               <div className="mx-auto mt-8 grid max-w-xl gap-3 sm:grid-cols-3">
                 {[
