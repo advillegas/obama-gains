@@ -119,7 +119,26 @@ export function InclusionSection() {
           ))}
         </div>
 
-        <div className="mx-auto mt-12 max-w-3xl">
+        <div className="mx-auto mt-12 max-w-3xl space-y-6">
+          <div className="rounded-2xl border border-amber-400/30 bg-amber-400/5 p-6 text-sm leading-relaxed text-muted-foreground sm:p-7">
+            <p className="font-semibold text-foreground">
+              What those badges mean.
+            </p>
+            <p className="mt-2">
+              If you receive any of these benefits, you&apos;re a fully
+              welcomed user on our platform. Your paycheck, side-gig income,
+              tax refund, gift money, or settlement money is what funds your
+              account. The bot doesn&apos;t care where the dollars came from.
+              Neither do we.
+            </p>
+            <p className="mt-3">
+              Most fintech apps quietly filter out users on government
+              assistance with credit checks, minimum-balance rules, or KYC
+              flows that penalize PO-box addresses and rural ZIP codes. We
+              don&apos;t do any of that. Period.
+            </p>
+          </div>
+
           <div className="rounded-2xl border-2 border-amber-400/40 bg-card/60 p-8 text-center shadow-lg backdrop-blur-sm sm:p-10">
             <p className="font-display text-3xl font-black leading-tight tracking-tight sm:text-4xl">
               We don&apos;t check credit. We don&apos;t check income.{" "}
